@@ -1,7 +1,6 @@
 * {
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
 }
 body {
     min-height: 100vh;
@@ -9,6 +8,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    background-color: silver;
 
 }
 .container {
@@ -16,37 +17,88 @@ body {
     flex-wrap: wrap;
     height: 600px; 
     width: 600px;
-    border: solid 1px; 
+    border: solid 20px black; 
     background-color: rgb(255, 203, 182);
-    box-sizing: border-box;
-    justify-content: center;
+    margin: 0  auto;
 }
 
 .cells {
-   display: inline-block;
-   box-sizing: content-box;
-    width: 30px;
-    height: 30px;
-    border: 1px solid black;
+    display: inline-block;
+    background-color: white; 
+    border: none;
     margin: 0px;
-    padding: 0px;
+    padding: 0px;  
+    box-sizing: content-box;
 }
 
 .cells1{
     display: inline-block;
     box-sizing: content-box;
-    height: 30px;
-    width: 30px;
     padding: 0px;
     margin: 0px;
-    border: 1px solid rgb(34, 134, 25);
     background-color: aqua;
-
+    border: none;
 }
 
 
-.container>.cells:nth-child(17n+1){
-    width: 100%;
-    border: 0;
-    height: 0;
+.btnAsk {
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    line-height: 1;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 20px;
+    width: 300px;
+    height: 50px;
+    font-weight: bold;
+    border-bottom: 5px solid #b46436;
+    transition: 0.3s;
+    background-color: #eb8b54;
+    box-shadow: 3px 5px 0px 0px rgba(51, 51, 51, 1);
+}
+.btnAsk:hover{
+    border-bottom-width: 0;
+    transform: translateY(5px);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+}
+
+.btnGroup {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    gap: 70px;
+
+}
+
+.btnTiles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    text-decoration: none;
+    color: #333333;
+    font-size: 18px;
+    border-radius: 0px;
+    height: 40px;
+    width: 150px;
+    font-weight: bold;
+    border: 2px solid #333333;
+    transition: 0.7s;
+    box-shadow: 3px 3px 0px 0px rgba(51,51,51,1);
+    background-color: #ffffff;
+}
+.btnTiles:hover {
+    box-shadow: 0 0 #333;
+    color: #fff;
+    background-color: #333;
 }
