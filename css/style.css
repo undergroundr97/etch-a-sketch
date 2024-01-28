@@ -6,7 +6,6 @@
 body {
     min-height: 100vh;
     height: 100vh;
-    width: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,28 +14,38 @@ body {
 .container {
     display: flex;
     flex-wrap: wrap;
-    background-color: silver;
-    height: auto; 
-    width: 400px;
-    border: solid 10px; 
-    
+    height: 600px; 
+    width: 600px;
+    border: solid 1px; 
+    background-color: rgb(255, 203, 182);
+    box-sizing: border-box;
+    justify-content: center;
 }
 
 .cells {
-    height: 25px;
-    width: 25px;
-    margin: auto;
-    border: 0.1px solid blue;
-}
-.cells:hover {
-    background-color: black;
-    transition-duration: 0.5s all;
+   display: inline-block;
+   box-sizing: content-box;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    margin: 0px;
+    padding: 0px;
 }
 
-.cellshover{
-    background-color: black;
+.cells1{
+    display: inline-block;
+    box-sizing: content-box;
+    height: 30px;
+    width: 30px;
+    padding: 0px;
+    margin: 0px;
+    border: 1px solid rgb(34, 134, 25);
+    background-color: aqua;
+
 }
-.container>.cells:nth-child(16n+1){
+
+
+.container>.cells:nth-child(17n+1){
     width: 100%;
     border: 0;
     height: 0;
