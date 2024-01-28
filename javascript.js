@@ -112,7 +112,7 @@ btn70T.addEventListener('click', () => {
 function clearGrid (){
   let newGridSize = prompt('How many tiles?');
 
-  if (newGridSize >= 1 && newGridSize <= 100){
+  if (newGridSize >= 1 && newGridSize <= 120){
     while(container.hasChildNodes()){
       container.removeChild(container.lastChild);
     }
